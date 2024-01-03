@@ -7,9 +7,9 @@ import { useSearchParams } from "react-router-dom";
 
 const SearchPage = () => {
   // Get searchParams object from useSearchParams
-  cosnt[searchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-  const petNameToFind = SearchParams.get("name"); // Get query parameter using searchParams object
+  const petNameToFind = searchParams.get("name"); // Get query parameter using searchParams object
 
   const [pets, setPets] = useState([]);
 
